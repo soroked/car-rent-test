@@ -125,7 +125,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   font-size: 14px;
   line-height: 1.28571;
   color: #8a8a89;
-`,o0=()=>{const e=ui(),t=n=>{n.preventDefault(),e(r2(n.target.car.value))};return b.jsxs(s2,{onSubmit:t,children:[b.jsxs("div",{className:Li.formControls,children:[b.jsxs("div",{children:[b.jsx(Ka,{children:"Car brand"}),b.jsx(lh,{id:"car",name:"car",styles:xh,options:nk,placeholder:"Enter the text"})]}),b.jsxs("div",{children:[b.jsx(Ka,{children:"Price/1hour"}),b.jsx(lh,{id:"car",name:"car",styles:{...xh,...i2},options:rk,placeholder:"To $"})]}),b.jsxs("div",{children:[b.jsx(Ka,{children:"Car milage / km"}),b.jsxs("div",{children:[b.jsx("input",{className:Li.input,placeholder:"From"}),b.jsx("input",{className:(Li.input,Li.inputLeft),placeholder:"To"})]})]})]}),b.jsx(l2,{type:"submit",children:"Search"})]})},a2="_container_1u2c8_1",u2={container:a2},c2=hi.button`
+`,o0=()=>{const e=ui(),t=n=>{n.preventDefault(),e(r2(n.target.car.value))};return b.jsxs(s2,{onSubmit:t,children:[b.jsxs("div",{className:Li.formControls,children:[b.jsxs("div",{children:[b.jsx(Ka,{children:"Car brand"}),b.jsx(lh,{id:"car",name:"car",styles:xh,options:nk,placeholder:"Enter the text"})]}),b.jsxs("div",{children:[b.jsx(Ka,{children:"Price/1hour"}),b.jsx(lh,{id:"price",name:"price",styles:{...xh,...i2},options:rk,placeholder:"To $"})]}),b.jsxs("div",{children:[b.jsx(Ka,{children:"Car milage / km"}),b.jsxs("div",{children:[b.jsx("input",{className:Li.input,placeholder:"From"}),b.jsx("input",{className:(Li.input,Li.inputLeft),placeholder:"To"})]})]})]}),b.jsx(l2,{type:"submit",children:"Search"})]})},a2="_container_1u2c8_1",u2={container:a2},c2=hi.button`
   display: flex;
   align-items: center;
   justify-content: center;
