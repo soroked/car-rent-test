@@ -1,8 +1,26 @@
-# React + Vite
+# CaRent
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the CaRental project! This project is a simple web application built using Vite and React for managing car rentals.
 
-Currently, two official plugins are available:
+##Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+View available cars
+Filter cars by various criteria
+Reserve a car for rental
+Manage rental reservations
+Add new cars to the inventory
+
+##Technologies Used
+
+Vite
+React
+React Router
+CSS Modules
+
+##Getting Started
+
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies using npm install.
+4. Start the development server using npm run dev.
+5. Open your browser and navigate to http://localhost:3000 to view the application.

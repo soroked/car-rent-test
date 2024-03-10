@@ -4,6 +4,7 @@ import FilterForm from "src/components/FilterForm/FilterForm";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 import { pageIncrement } from "src/redux/cars/cars.reducer";
+import css from "./CatalogPage.module.css";
 
 const LoadMore = styled.button`
   display: flex;
@@ -31,12 +32,7 @@ const CatalogPage = () => {
 
   return (
     <>
-      <div
-        style={{
-          paddingLeft: "15px",
-          paddingRight: "15px",
-        }}
-      >
+      <div className={css.container}>
         <FilterForm />
         <CarCards page={page} />
         {page * 12 === cars?.length && (
