@@ -2,7 +2,7 @@
 
 Welcome to the CaRental project! This project is a simple web application built using Vite and React for managing car rentals.
 
-##Features
+## Features
 
 View available cars
 Filter cars by various criteria
@@ -10,7 +10,7 @@ Reserve a car for rental
 Manage rental reservations
 Add new cars to the inventory
 
-##Technologies Used
+## Technologies Used
 
 Vite
 React
@@ -18,7 +18,7 @@ Redux Toolkit
 React Router
 CSS Modules
 
-##Getting Started
+## Getting Started
 
 1. Clone this repository to your local machine.
 2. Navigate to the project directory.
