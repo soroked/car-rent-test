@@ -14,6 +14,7 @@ Add new cars to the inventory
 
 Vite
 React
+Redux Toolkit
 React Router
 CSS Modules
 
