@@ -1,5 +1,6 @@
 import makes from "src/assets/makes";
-// import css from "src/components/FilterForm/FilterForm.module.css";
+import price from "src/assets/price";
+import css from "src/components/FilterForm/FilterForm.module.css";
 import Select from "react-select";
 import styled from "styled-components";
 import { useDispatch } from "react-redux";
@@ -46,6 +47,37 @@ const customStyles = {
     ...base,
     transition: "all .2s ease",
     transform: state.selectProps.menuIsOpen ? "rotate(180deg)" : null,
+  }),
+};
+
+const customStylesPrice = {
+  control: (provided) => ({
+    // class attribute : class=" css-i32vvf-control"
+    ...provided,
+    background: "#f7f7fb",
+    display: "flex",
+    borderRadius: "14px",
+
+    // flexWrap: "nowrap",
+    cursor: "pointer",
+    borderColor: "transparent",
+    width: "125px",
+    height: "48px",
+  }),
+  menu: (provided) => ({
+    // 'menu' is from the div class too.
+    ...provided,
+    background: "white",
+    width: "125px",
+    height: "272px",
+    borderRadius: "14px",
+
+    fontFamily: "Manrope, sans-serif",
+    fontWeight: 500,
+    fontSize: "16px",
+    lineHeight: 1.25,
+    color: "rgba(18, 20, 23, 0.2)",
+    overflow: "hidden",
   }),
 };
 
@@ -98,15 +130,34 @@ const FilterForm = () => {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <div>
-        <Label>Car brand</Label>
-        <Select
-          id="car"
-          name="car"
-          styles={customStyles}
-          options={makes}
-          placeholder="Enter the text"
-        />
+      <div className={css.formControls}>
+        <div>
+          <Label>Car brand</Label>
+          <Select
+            id="car"
+            name="car"
+            styles={customStyles}
+            options={makes}
+            placeholder="Enter the text"
+          />
+        </div>
+        <div>
+          <Label>Price/1hour</Label>
+          <Select
+            id="car"
+            name="car"
+            styles={{ ...customStyles, ...customStylesPrice }}
+            options={price}
+            placeholder="To $"
+          />
+        </div>
+        <div>
+          <Label>Car milage / km</Label>
+          <div>
+            <input className={css.input} placeholder="From" />
+            <input className={(css.input, css.inputLeft)} placeholder="To" />
+          </div>
+        </div>
       </div>
       <SearchButton type="submit">Search</SearchButton>
     </Form>
