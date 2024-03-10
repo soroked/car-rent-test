@@ -144,8 +144,8 @@ const FilterForm = () => {
         <div>
           <Label>Price/1hour</Label>
           <Select
-            id="car"
-            name="car"
+            id="price"
+            name="price"
             styles={{ ...customStyles, ...customStylesPrice }}
             options={price}
             placeholder="To $"
